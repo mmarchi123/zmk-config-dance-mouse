@@ -11,7 +11,7 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
-    - nmae: nice-shield-pig
+    - name: nice-shield-pig
       remote: chase-hunter
       revision: main
    # - name: nice-view-gem #nice-view-gem

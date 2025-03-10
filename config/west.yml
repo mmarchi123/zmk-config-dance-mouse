@@ -4,15 +4,20 @@ manifest:
       url-base: https://github.com/chase-hunter
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: m165437 #nice-view-gem
-      url-base: https://github.com/M165437 #nice-view-gem
+    #- name: m165437 #nice-view-gem
+    #  url-base: https://github.com/M165437 #nice-view-gem
+    - name: chase-hunter #nice-shield-pig
+      url-base: https://github.com/chase-hunter #nice-shield-pig
   projects:
     - name: zmk
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
-    - name: nice-view-gem #nice-view-gem
-      remote: m165437 #nice-view-gem
-      revision: main #nice-view-gem
+    - name: nice-shield-pig #nice-shield-pig
+      remote: chase-hunter #nice-shield-pig
+      revision: main #nice-shield-pig
+   # - name: nice-view-gem #nice-view-gem
+   #   remote: m165437 #nice-view-gem
+   #   revision: main #nice-view-gem
   self:
     path: config

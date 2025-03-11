@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/chase-hunter
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: m165437 #nice-view-gem
-      url-base: https://github.com/M165437 #nice-view-gem
+  #  - name: m165437 #nice-view-gem
+  #    url-base: https://github.com/M165437 #nice-view-gem
   projects:
     - name: zmk
       remote: petejohanson

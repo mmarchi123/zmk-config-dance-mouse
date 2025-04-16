@@ -11,7 +11,7 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
-    - name: nice-view-chase #chase-view
+    - name: nice-view-lambda #chase-view
       remote: chase-hunter #chase-view
       revision: main #chase-view
     #- name: nice-view-gem #nice-view-gem

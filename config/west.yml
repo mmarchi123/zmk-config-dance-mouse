@@ -14,9 +14,6 @@ manifest:
     - name: nice-view-chase #chase-view
       remote: chase-hunter #chase-view
       revision: main #chase-view
-    #- name: nice-shield-p #pig
-    # remote: chase-hunter #pig
-    # revision: main #pig
     #- name: nice-view-gem #nice-view-gem
     #  remote: m165437 #nice-view-gem
     #  revision: main #nice-view-gem

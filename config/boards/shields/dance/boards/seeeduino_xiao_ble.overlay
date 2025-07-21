@@ -1,0 +1,14 @@
+// Map pro_micro_i2c to the actual I2C node on Seeeduino Xiao BLE
+/ {
+    aliases {
+        pro-micro-i2c = &i2c0;
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    
+    // Add any I2C devices that were configured for pro_micro_i2c
+    // Copy them from your dance.dtsi file if needed
+};

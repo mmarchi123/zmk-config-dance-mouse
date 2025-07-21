@@ -1,8 +1,9 @@
-#include <dt-bindings/zmk/matrix_transform.h>
 #import "dance.dtsi"
 
 &physical_layout0 {
-    transform = <&default_transform>;
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
 };
 
 / {

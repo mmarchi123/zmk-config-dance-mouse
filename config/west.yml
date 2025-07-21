@@ -6,6 +6,12 @@ manifest:
       url-base: https://github.com/petejohanson
     #- name: m165437 #nice-view-gem
     #  url-base: https://github.com/M165437 #nice-view-gem
+
+    # Conf for dongle
+    - name: carrefinho                            # <---
+      url-base: https://github.com/carrefinho     # <---
+    - name: caksoylar                             # <---
+      url-base: https://github.com/caksoylar      # <---
   projects:
     - name: zmk
       remote: petejohanson
@@ -20,5 +26,13 @@ manifest:
     #- name: nice-view-gem #nice-view-gem
     #  remote: m165437 #nice-view-gem
     #  revision: main #nice-view-gem
+    
+    # Conf for dongle
+    - name: forager-zmk-module                    # <---
+      remote: carrefinho                          # <---
+      revision: main                              # <---
+    - name: zmk-rgbled-widget                     # <---
+      remote: caksoylar                           # <---
+      revision: main                              # <---
   self:
     path: config

@@ -12,13 +12,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define NAV 1
-#define FUN 2
-#define NUM 3
-#define SYMBOL 4
-#define NAV2 5
-#define SYS 6
-#define EDIT 7
+#define COLEMAK 1
+#define NUM 2
+#define NAV 3
+#define FUN 4
 
 &lt { quick-tap-ms = <50>; };
 

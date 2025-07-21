@@ -1,21 +1,21 @@
-/*
-if SHIELD_DANCE_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "dance!"
+# if SHIELD_DANCE_LEFT
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+#config ZMK_KEYBOARD_NAME
+#    default "dance!"
 
-endif
+# config ZMK_SPLIT_ROLE_CENTRAL
+#   default y
 
-if SHIELD_DANCE_LEFT || SHIELD_DANCE_RIGHT
+# endif
 
-config ZMK_SPLIT
-    default y
+# if SHIELD_DANCE_LEFT || SHIELD_DANCE_RIGHT
 
-endif
-*/
+# config ZMK_SPLIT
+#    default y
+
+# endif
+
 
 if SHIELD_DANCE_DONGLE
 

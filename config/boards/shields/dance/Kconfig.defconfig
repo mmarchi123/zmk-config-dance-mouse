@@ -1,19 +1,29 @@
-if SHIELD_FORAGER_DONGLE
-
+# Dongle configuration - ONLY central
+if SHIELD_DANCE_DONGLE
 config ZMK_KEYBOARD_NAME
-    default "Dance"
-
+    default "Dance!"
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 2
-
 endif
 
-if SHIELD_FORAGER_DONGLE || SHIELD_FORAGER_LEFT || SHIELD_FORAGER_RIGHT
+# Left keyboard - peripheral (connects to dongle)
+if SHIELD_DANCE_LEFT
+config ZMK_KEYBOARD_NAME
+    default "Dance Left"
+# Remove ZMK_SPLIT_ROLE_CENTRAL - let it default to peripheral
+endif
 
+# Right keyboard - peripheral (connects to dongle)  
+if SHIELD_DANCE_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "Dance Right"
+# Remove ZMK_SPLIT_ROLE_CENTRAL - let it default to peripheral
+endif
+
+# Enable split for all shields
+if SHIELD_DANCE_DONGLE || SHIELD_DANCE_LEFT || SHIELD_DANCE_RIGHT
 config ZMK_SPLIT
     default y
-
 endif

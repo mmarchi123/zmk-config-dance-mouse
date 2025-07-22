@@ -1,25 +1,33 @@
 #include "dance.dtsi"
 
+// Delete the problematic kscan from dtsi
+/delete-node/ &kscan0;
+
 / {
     chosen {
-        zmk,kscan = &mock_kscan;  // Override to use mock kscan
+        zmk,kscan = &mock_kscan;
         zmk,physical-layout = &physical_layout0;
     };
     
+    // Create new mock kscan for dongle
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
     };
+    
+    // Create a new kscan0 that's disabled (in case other overlays reference it)
+    kscan0: kscan_disabled {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+        status = "disabled";
+    };
 };
 
-// Update physical layout to reference the mock kscan for dongle
+// Update physical layout to use mock kscan
 &physical_layout0 {
     kscan = <&mock_kscan>;
-};
-
-// Disable the original kscan0 for dongle builds
-&kscan0 {
-    status = "disabled";
 };

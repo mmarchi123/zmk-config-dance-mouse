@@ -17,7 +17,7 @@ jobs:
         - name: 'Parse ZMK keymap'
           run: keymap -c ./keymap_img/dance_keymap_config.yaml parse -c 10 -z ./config/boards/shields/dance/dance.keymap --base-keymap ./keymap_img/dance_keymap_base.yaml > ./keymap_img/dance_keymap.yaml
         - name: 'Draw keymap'
-          run: keymap -c ./keymap_img/dance_keymap_config.yaml draw --select-layers base -k chocofi ./keymap_img/dance_keymap.yaml > ./keymap_img/dance_keymap.svg
+          run: keymap -c ./keymap_img/dance_keymap_config.yaml draw --select-layers Base -k chocofi ./keymap_img/dance_keymap.yaml > ./keymap_img/dance_keymap.svg
         - name: 'Commit keymap image'
           run: |
             git config --global user.name 'GitHub Actions'

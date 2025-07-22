@@ -1,11 +1,5 @@
 #include "dance.dtsi"
 
-&physical_layout0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        transform = <&default_transform>;
-};
-
 / {
     chosen {
         zmk,kscan = &mock_kscan;

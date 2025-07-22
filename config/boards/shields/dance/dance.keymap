@@ -315,7 +315,6 @@
                 &trans  &trans  &trans  &kp BACKSPACE  &kp DELETE        &trans
             >;
 
-            label = "Navigation";
             display-name = "Navigation";
         };
 
@@ -327,7 +326,6 @@
                             &trans        &trans        &trans        &trans  &trans  &trans
             >;
 
-            label = "Function";
             display-name = "Function";
         };
 
@@ -339,7 +337,6 @@
                 &trans  &trans  &trans   &kp SPACE  &kp DEL  &trans
             >;
 
-            label = "Numeric";
             display-name = "Numeric";
         };
 
@@ -351,7 +348,6 @@
                           &trans          &trans             &trans        &trans           &trans         &trans
             >;
 
-            label = "Symbol";
             display-name = "Symbol";
         };
 
@@ -363,7 +359,6 @@
                           &trans  &trans  &trans  &kp LC(BACKSPACE)   &kp LC(DELETE)  &trans
             >;
 
-            label = "Nav 2";
             display-name = "Nav 2";
         };
 
@@ -386,7 +381,6 @@
                              &trans     &trans     &trans             &kp BACKSPACE  &kp DEL  &trans
             >;
 
-            label = "Edit";
             display-name = "Edit;
         };
     };

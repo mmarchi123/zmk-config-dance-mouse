@@ -304,6 +304,7 @@
             >;
 
             label = "Base";
+            display-name = "Base";
         };
 
         nav_layer {
@@ -326,6 +327,7 @@
             >;
 
             label = "Function";
+            display-name = "Function";
         };
 
         num_layer {
@@ -337,6 +339,7 @@
             >;
 
             label = "Numeric";
+            display-name = "Numeric";
         };
 
         symbol_layer {
@@ -348,6 +351,7 @@
             >;
 
             label = "Symbol";
+            display-name = "Symbol";
         };
 
         nav2_layer {
@@ -359,6 +363,7 @@
             >;
 
             label = "Nav 2";
+            display-name = "Nav 2";
         };
 
         sys_layer {
@@ -381,6 +386,7 @@
             >;
 
             label = "Edit";
+            display-name = "Edit;
         };
     };
 };

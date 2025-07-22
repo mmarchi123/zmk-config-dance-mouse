@@ -1,4 +1,4 @@
-#import "dance.dtsi"
+#include "dance.dtsi"
 
 &physical_layout0 {
         compatible = "zmk,physical-layout";

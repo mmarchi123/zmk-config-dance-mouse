@@ -6,9 +6,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
     chosen {
-        zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-        zmk,physical_layout = &physical_layout0;
+        // Note: zmk,kscan and zmk,physical-layout will be set by overlays
     };
     // Split keyboard configuration for dongle-based setup
     split: split {
@@ -36,19 +35,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
-        kscan = <&kscan0>;
-    };
-
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
-        diode-direction = "col2row";
-        row-gpios
-            = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
+        // Note: kscan will be set by overlays
     };
 };
 

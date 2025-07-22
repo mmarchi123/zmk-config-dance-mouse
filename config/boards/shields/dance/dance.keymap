@@ -370,7 +370,7 @@
                           &trans          &trans                &trans           &mkp LCLK       &mkp RCLK          &mkp MCLK
             >;
 
-            label = "System";
+            display-name = "System";
         };
 
         edit_layer {

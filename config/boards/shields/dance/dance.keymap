@@ -325,7 +325,7 @@
                             &trans        &trans        &trans        &trans  &trans  &trans
             >;
 
-            label = "Functions";
+            label = "Function";
         };
 
         num_layer {

@@ -50,9 +50,11 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
     };
 };
 
-#ifdef CONFIG_BOARD_SEEEDUINO_XIAO_BLE
+#ifdef CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+// This is likely the dongle (central)
 &i2c0 {
 #else
+// This is likely a keyboard half (peripheral)
 &pro_micro_i2c {
 #endif
     status = "okay";

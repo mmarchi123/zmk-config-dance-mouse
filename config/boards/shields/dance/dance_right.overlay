@@ -3,8 +3,16 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 #include "dance.dtsi"
+
+/ {
+    // Split configuration for right peripheral
+    split: split {
+        compatible = "zmk,split";
+        central-ble-address-offset = <0>;      // Central (dongle) = address 0
+        peripheral-ble-address-offset = <2>;   // Right = address 2
+    };
+};
 
 &default_transform {
     col-offset = <5>;

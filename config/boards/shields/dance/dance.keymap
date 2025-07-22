@@ -381,7 +381,7 @@
                              &trans     &trans     &trans             &kp BACKSPACE  &kp DEL  &trans
             >;
 
-            display-name = "Edit;
+            display-name = "Edit";
         };
     };
 };

@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        zmk,kscan = &mock_kscan;
+        zmk,kscan = &mock_kscan;  // Override to use mock kscan
         zmk,physical-layout = &physical_layout0;
     };
     
@@ -14,7 +14,12 @@
     };
 };
 
-// Update physical layout to reference the mock kscan
+// Update physical layout to reference the mock kscan for dongle
 &physical_layout0 {
     kscan = <&mock_kscan>;
+};
+
+// Disable the original kscan0 for dongle builds
+&kscan0 {
+    status = "disabled";
 };

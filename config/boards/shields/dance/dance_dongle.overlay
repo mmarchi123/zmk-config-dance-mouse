@@ -9,6 +9,13 @@
         zmk,physical-layout = &physical_layout0;
     };
     
+    // Split configuration for dongle (central)
+    split: split {
+        compatible = "zmk,split";
+        central-ble-address-offset = <0>;      // Dongle = address 0
+        peripheral-ble-address-offset = <1>;   // Base offset for peripherals
+    };
+    
     // Create new mock kscan for dongle
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";

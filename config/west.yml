@@ -20,13 +20,7 @@ manifest:
     - name: nice-shield-p #pig
       remote: chase-hunter #pig
       revision: main #pig
-    #- name: nice-view-lambda #chase-view
-    #  remote: chase-hunter #chase-view
-    #  revision: main #chase-view
-    #- name: nice-view-gem #nice-view-gem
-    #  remote: m165437 #nice-view-gem
-    #  revision: main #nice-view-gem
-    
+
     # Conf for dongle
     - name: prospector-zmk-module
       remote: carrefinho

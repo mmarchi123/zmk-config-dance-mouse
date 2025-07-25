@@ -112,8 +112,8 @@
             timeout-ms = <75>;
         };
 
-        cmb_bspace_del {
-            bindings = <&bspc_del>;
+        cmb_bspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <18 17>;
             timeout-ms = <80>;
         };

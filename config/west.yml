@@ -18,7 +18,7 @@ manifest:
     - name: nice-shield-p #pig
       remote: chase-hunter #pig
       revision: main #pig
-      
+
     # added for trackpad 8/18
     - name: cirque-input-module
       remote: petejohanson

@@ -24,6 +24,7 @@
 &lt { quick-tap-ms = <50>; };
 
 / {
+
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {

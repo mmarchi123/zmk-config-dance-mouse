@@ -14,6 +14,16 @@ config BT_MAX_PAIRED
     default 7
 endif
 
+# added for trackpad 8/18
+if SHIELD_DANCE_RIGHT
+config ZMK_POINTING
+    default y
+config SPI 
+    default y
+config INPUT_PINNACLE
+    default y
+endif
+
 if SHIELD_DANCE_DONGLE || SHIELD_DANCE_LEFT || SHIELD_DANCE_RIGHT
 config ZMK_SPLIT
     default y

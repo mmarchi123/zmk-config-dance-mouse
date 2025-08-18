@@ -4,9 +4,6 @@ manifest:
       url-base: https://github.com/chase-hunter
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    #- name: m165437 #nice-view-gem
-    #  url-base: https://github.com/M165437 #nice-view-gem
-
     # Conf for dongle
     - name: carrefinho                            # <---
       url-base: https://github.com/carrefinho     # <---
@@ -17,9 +14,15 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
+
     - name: nice-shield-p #pig
       remote: chase-hunter #pig
       revision: main #pig
+      
+    # added for trackpad 8/18
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
 
     # Conf for dongle
     - name: prospector-zmk-module

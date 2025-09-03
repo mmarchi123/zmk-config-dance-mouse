@@ -339,10 +339,10 @@
 
         sys_layer {
             bindings = <
-&mkp RCLK  &trans          &kp C_PREVIOUS  &kp C_NEXT            &mkp LCLK                &trans          &kp C_VOL_DN       &kp C_VOLUME_UP   &kp C_MUTE       &trans
-&kp HOME   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP          &msc SCRL_RIGHT          &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP      &mmv MOVE_RIGHT  &kp END
-&trans     &trans          &kp C_BRI_DEC   &kp C_BRIGHTNESS_INC  &trans                   &trans          &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans           &trans
-                           &mkp MCLK       &mkp RCLK             &hold_tap_layer_key 6 0  &trans          &trans             &trans
+&mkp RCLK         &trans     &msc SCRL_DOWN  &msc SCRL_UP  &mkp LCLK                &trans          &kp C_VOL_DN       &kp C_VOLUME_UP   &kp C_MUTE       &trans
+&kp HOME          &kp LC(X)  &kp LC(C)       &kp LC(V)     &kp END                  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP      &mmv MOVE_RIGHT  &kp END
+&select_all_copy  &trans     &trans          &trans        &select_all_paste        &trans          &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans           &trans
+                             &trans          &trans        &hold_tap_layer_key 6 0  &trans          &trans             &trans
             >;
 
             display-name = "System";

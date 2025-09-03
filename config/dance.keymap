@@ -341,7 +341,7 @@
             bindings = <
 &mkp RCLK         &trans     &msc SCRL_DOWN  &msc SCRL_UP  &mkp LCLK                &trans          &kp C_VOL_DN       &kp C_VOLUME_UP   &kp C_MUTE       &trans
 &kp HOME          &kp LC(X)  &kp LC(C)       &kp LC(V)     &kp END                  &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP      &mmv MOVE_RIGHT  &kp END
-&select_all_copy  &trans     &trans          &trans        &select_all_paste        &trans          &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans           &trans
+&select_all_copy  &trans     &kp LC(Z)       &kp LC(Y)     &select_all_paste        &trans          &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &trans           &trans
                              &trans          &trans        &hold_tap_layer_key 6 0  &trans          &trans             &trans
             >;
 

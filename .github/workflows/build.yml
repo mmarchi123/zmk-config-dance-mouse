@@ -14,8 +14,8 @@ jobs:
         - run: |
             pip install --upgrade pip
             pip install "keymap_drawer==0.13.0"
-        - name: 'Copy keymap file'
-          run: cp ./config/dance.keymap ./config/boards/shields/dance/dance.keymap
+        # - name: 'Copy keymap file'
+        #   run: cp ./config/dance.keymap ./config/boards/shields/dance/dance.keymap
         - name: 'Parse ZMK keymap'
           run: keymap -c ./keymap_img/dance_keymap_config.yaml parse -c 10 -z ./config/boards/shields/dance/dance.keymap --base-keymap ./keymap_img/dance_keymap_base.yaml > ./keymap_img/dance_keymap.yaml
         - name: 'Draw keymap'

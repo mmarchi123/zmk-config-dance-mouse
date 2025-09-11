@@ -121,6 +121,7 @@
             label = "CAPS_WORD_ENTER";
             #binding-cells = <0>;
             continue-list = <SPACE>;
+            mods = <(MOD_LSFT)>;
         };
     };
 

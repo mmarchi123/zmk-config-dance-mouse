@@ -115,6 +115,13 @@
             tapping-term-ms = <50>;
             hold-trigger-key-positions = <32>;
         };
+
+        caps_word_enter: caps_word_enter {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD_ENTER";
+            #binding-cells = <0>;
+            continue-list = <ENTER>;
+        };
     };
 
     combos {
@@ -179,7 +186,7 @@
         };
 
         cmb_capsword {
-            bindings = <&caps_word>;
+            bindings = <&caps_word_enter>;
             key-positions = <13 16>;
         };
 
